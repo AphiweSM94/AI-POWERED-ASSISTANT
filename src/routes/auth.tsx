@@ -50,7 +50,7 @@ function AuthPage() {
   async function handleSignUp(e: React.FormEvent) {
     e.preventDefault();
     setBusy(true);
-    const { error } = await supabase.auth.signUp({
+    const { data, error } = await supabase.auth.signUp({
       email,
       password,
       options: {
@@ -63,8 +63,12 @@ function AuthPage() {
       toast.error(error.message);
       return;
     }
-    toast.success("Account created. You're all set!");
-    navigate({ to: "/app" });
+    if (data.session) {
+      toast.success("Account created. You're all set!");
+      navigate({ to: "/app" });
+    } else {
+      toast.success("Check your email to confirm your account, then sign in.");
+    }
   }
 
   async function handleGoogle() {
