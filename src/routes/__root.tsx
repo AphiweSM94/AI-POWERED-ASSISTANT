@@ -97,6 +97,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Momentum — AI Workplace Productivity Assistant" },
+      { name: "description", content: "AI-Powered Workplace Productivity Assistant for professionals to boost efficiency and automate tasks." },
+      { property: "og:description", content: "AI-Powered Workplace Productivity Assistant for professionals to boost efficiency and automate tasks." },
+      { name: "twitter:description", content: "AI-Powered Workplace Productivity Assistant for professionals to boost efficiency and automate tasks." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/aa78d493-8cb3-44e3-8abf-19e98539aee2/id-preview-20d1c0d6--2d3e863c-3193-434b-baf9-3b759098c799.lovable.app-1782301513538.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/aa78d493-8cb3-44e3-8abf-19e98539aee2/id-preview-20d1c0d6--2d3e863c-3193-434b-baf9-3b759098c799.lovable.app-1782301513538.png" },
     ],
     links: [
       {
